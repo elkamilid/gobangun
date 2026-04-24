@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BangunMarket | Marketplace Bahan Bangunan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .slider-container { scroll-snap-type: x mandatory; }
+        .slide-item { scroll-snap-align: start; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 px-4 py-3">
+        <div class="flex items-center gap-3 max-w-6xl mx-auto">
+            <div class="flex-1 bg-gray-100 rounded-lg flex items-center px-3 py-2 border border-transparent focus-within:border-orange-500 focus-within:bg-white transition-all">
+                <i data-lucide="search" class="w-4 h-4 text-gray-400 mr-2"></i>
+                <input type="text" placeholder="Cari semen, pasir, cat..." class="bg-transparent border-none outline-none text-xs w-full text-gray-800">
+            </div>
+            <div class="flex gap-3 text-gray-500 relative">
+                <i data-lucide="mail" class="w-6 h-6"></i>
+                <i data-lucide="bell" class="w-6 h-6"></i>
+                <div class="relative">
+                    <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+                    <span class="absolute -top-1 -right-1 bg-red-500 text-white text-[9px] font-bold rounded-full w-4 h-4 flex items-center justify-center">3</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mt-4 px-4 overflow-hidden">
+        <div class="slider-container flex overflow-x-auto gap-3 hide-scrollbar rounded-2xl">
+            <div class="slide-item flex-shrink-0 w-[85%] md:w-[400px] h-32 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-5 flex flex-col justify-center text-white relative overflow-hidden">
+                <h3 class="text-lg font-bold z-10 leading-tight">Promo Tukang<br>Diskon 20%</h3>
+                <p class="text-[10px] opacity-90 z-10 mt-1">Khusus pembelian material grosir</p>
+                <i data-lucide="truck" class="absolute -right-4 -bottom-2 w-24 h-24 text-white/20 rotate-12"></i>
+            </div>
+            <div class="slide-item flex-shrink-0 w-[85%] md:w-[400px] h-32 bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-5 flex flex-col justify-center text-white relative overflow-hidden">
+                <h3 class="text-lg font-bold z-10 leading-tight">Bebas Ongkir<br>Area Bekasi</h3>
+                <p class="text-[10px] opacity-90 z-10 mt-1">S&K berlaku untuk armada sendiri</p>
+                <i data-lucide="package-check" class="absolute -right-4 -bottom-2 w-24 h-24 text-white/20 -rotate-12"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid grid-cols-4 gap-y-4 px-4 py-6 max-w-6xl mx-auto">
+        <div class="flex flex-col items-center gap-1 group">
+            <div class="w-11 h-11 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 group-active:scale-90 transition">
+                <i data-lucide="calculator" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-medium text-gray-700">Hitung Bahan</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 group">
+            <div class="w-11 h-11 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 group-active:scale-90 transition">
+                <i data-lucide="user-check" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-medium text-gray-700">Cari Tukang</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 group">
+            <div class="w-11 h-11 bg-green-100 rounded-xl flex items-center justify-center text-green-600 group-active:scale-90 transition">
+                <i data-lucide="map" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-medium text-gray-700">Toko Terdekat</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 group">
+            <div class="w-11 h-11 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 group-active:scale-90 transition">
+                <i data-lucide="zap" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-medium text-gray-700">Kilat</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 group">
+            <div class="w-11 h-11 bg-yellow-100 rounded-xl flex items-center justify-center text-yellow-600 group-active:scale-90 transition">
+                <i data-lucide="credit-card" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-medium text-gray-700">Top Up</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 group">
+            <div class="w-11 h-11 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600 group-active:scale-90 transition">
+                <i data-lucide="badge-percent" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-medium text-gray-700">Promo Hari Ini</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 group">
+            <div class="w-11 h-11 bg-cyan-100 rounded-xl flex items-center justify-center text-cyan-600 group-active:scale-90 transition">
+                <i data-lucide="award" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-medium text-gray-700">Official Store</span>
+        </div>
+        <div class="flex flex-col items-center gap-1 group">
+            <div class="w-11 h-11 bg-gray-200 rounded-xl flex items-center justify-center text-gray-600 group-active:scale-90 transition">
+                <i data-lucide="layout-grid" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[10px] font-medium text-gray-700">Lihat Semua</span>
+        </div>
+    </section>
+
+    <hr class="border-t-4 border-gray-100">
+
+    <main class="px-4 py-6 max-w-6xl mx-auto pb-28">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-base font-bold">Terlaris di Sekitarmu</h3>
+            <span class="text-orange-600 text-xs font-bold">Lihat Semua</span>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3" id="product-list">
+            </div>
+    </main>
+
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-100 flex justify-around py-2 z-50 shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+        <div class="flex flex-col items-center text-orange-600">
+            <i data-lucide="home" class="w-5 h-5"></i>
+            <span class="text-[9px] mt-1 font-semibold">Beranda</span>
+        </div>
+        <div class="flex flex-col items-center text-gray-400">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+            <span class="text-[9px] mt-1">Transaksi</span>
+        </div>
+        <div class="flex flex-col items-center text-gray-400">
+            <i data-lucide="heart" class="w-5 h-5"></i>
+            <span class="text-[9px] mt-1">Favorit</span>
+        </div>
+        <div class="flex flex-col items-center text-gray-400">
+            <i data-lucide="user" class="w-5 h-5"></i>
+            <span class="text-[9px] mt-1">Akun</span>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        // Database Dummy
+        const products = [
+            { name: "Semen Holcim 50kg", price: "Rp 62.000", shop: "Toko Abadi Jaya", city: "Bekasi", rating: "4.9", sold: "1rb+" },
+            { name: "Besi Beton 10mm Sni", price: "Rp 85.000", shop: "Baja Makmur", city: "Cikarang", rating: "4.8", sold: "500+" },
+            { name: "Pasir Merapi 1 Pick Up", price: "Rp 950.000", shop: "Sumber Pasir", city: "Tambun", rating: "5.0", sold: "100+" },
+            { name: "Pipa PVC 3 Inch", price: "Rp 45.000", shop: "Depo Bangunan", city: "Bekasi", rating: "4.7", sold: "2rb+" }
+        ];
+
+        const list = document.getElementById('product-list');
+        products.forEach(p => {
+            list.innerHTML += `
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col active:scale-95 transition">
+                    <div class="aspect-square bg-gray-100 flex items-center justify-center relative">
+                         <i data-lucide="image" class="w-10 h-10 text-gray-200"></i>
+                         <div class="absolute top-2 left-2 bg-green-500 text-white text-[8px] px-1.5 py-0.5 rounded font-bold">STAR</div>
+                    </div>
+                    <div class="p-2 flex-1 flex flex-col">
+                        <h4 class="text-xs text-gray-800 line-clamp-2 leading-tight mb-1">${p.name}</h4>
+                        <p class="text-sm font-bold text-gray-900 mb-1">${p.price}</p>
+                        <div class="mt-auto">
+                            <div class="flex items-center gap-1 text-[9px] text-gray-500 mb-1">
+                                <i data-lucide="map-pin" class="w-3 h-3"></i>
+                                <span class="truncate">${p.city}</span>
+                            </div>
+                            <div class="flex items-center gap-1 text-[9px]">
+                                <div class="flex items-center text-yellow-400">
+                                    <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                                    <span class="text-gray-600 ml-1">${p.rating}</span>
+                                </div>
+                                <span class="text-gray-300">|</span>
+                                <span class="text-gray-500">Terjual ${p.sold}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+        
+        lucide.createIcons();
+    </script>
+</body>
+</html>
